@@ -17,7 +17,7 @@ const productSchema = mongoose.Schema({
         type:String,
         default:'product'
     },
-    numOfOrders:{
+    count:{
         type:Number,
     },
     historyOrders:{

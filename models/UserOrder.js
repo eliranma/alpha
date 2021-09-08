@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const userOrderSchema = mongoose.Schema({
-    userName: {
+    userId: {
         type: String,
         required: true
     },
@@ -13,9 +13,16 @@ const userOrderSchema = mongoose.Schema({
         required:true
     },
     orderId:{
-        type:Number,
+        type: String,
         required:true
-    }
+    },
+    amount:{
+        type:Number,
+    },
+    address:{
+        type:String,
+    },
+
 
 })
 module.exports=mongoose.model('UserOrder', userOrderSchema)
