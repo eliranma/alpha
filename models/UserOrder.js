@@ -6,12 +6,16 @@ const userOrderSchema = mongoose.Schema({
         required: true
     },
     products:{
-        type: Array
+        type: Map
     },
     email:{
         type:String,
         required:true
     },
+    orderId:{
+        type:Number,
+        required:true
+    }
 
 })
 module.exports=mongoose.model('UserOrder', userOrderSchema)

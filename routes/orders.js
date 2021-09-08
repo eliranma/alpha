@@ -15,6 +15,7 @@ router.post('/createNewOrder', (req, res)=>{
         userName:req.body.userName,
         products:req.body.products,
         email:req.body.email,
+        orderId:req.body.orderId
     })
     userOrder.save()
     .then(data=>{

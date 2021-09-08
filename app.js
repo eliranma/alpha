@@ -13,8 +13,10 @@ app.use(express.json());
 //Import Routes
 const usersRoute = require('./routes/users');
 const orderRoute = require('./routes/orders');
+const productRoute = require('./routes/product');
 app.use('/api', usersRoute)
 app.use('/api', orderRoute)
+app.use('/api', productRoute)
 //Routes
 app.get('/', (req, res)=>{
     res.send('hello');
