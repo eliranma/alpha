@@ -3,6 +3,8 @@ const { db } = require('../models/Product');
 const Product = require('../models/Product');
 const router = express.Router();
 
+
+
 //Create New Product
 router.post('/insertProduct', (req, res)=>{
     const product=new Product({

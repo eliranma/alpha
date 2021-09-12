@@ -14,9 +14,11 @@ app.use(express.json());
 const usersRoute = require('./routes/users');
 const orderRoute = require('./routes/orders');
 const productRoute = require('./routes/product');
+const filesRoute = require('./routes/files');
 app.use('/api', usersRoute)
 app.use('/api', orderRoute)
 app.use('/api', productRoute)
+app.use('/api', filesRoute)
 //Routes
 app.get('/', (req, res)=>{
     res.send('hello');
